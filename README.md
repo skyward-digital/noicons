@@ -7,21 +7,18 @@
   </a>
 </p> -->
 
-<h1>Welcome to NoIcons!</h1>
+# Welcome to NoIcons!
 
-<p align="center">
-  An opinionated, completely blank icon library for you to use any of your custom SVG icons in first party <a href="#react">React</a> and <a href="#vue">Vue</a> libraries. No more inline SVGs!
-<p>
+An opinionated, completely blank icon library for you to use any of your custom SVG icons in first party [React](#react) and [Vue](#vue) libraries. No more inline SVGs!
 
-<p align="center">
-  <a href="#"><strong>Add your icon library URL here (or delete this)</strong></a>
-</p>
+[Add your icon library URL here (or delete this)](#)
+
+<a href="https://github.com/skyward-digital/noicons/releases"><img src="https://img.shields.io/npm/v/noicons" alt="Latest Release"></a>
+<a href="https://github.com/skyward-digital/noicons/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/noicons.svg" alt="License"></a>
 
 ## Quickstart
 
-<p>
-  Get started in a few simple steps:
-</p>
+Get started in a few simple steps:
 
 1. Fork this repo
 1. Add your custom SVG icons to the `src` directory
