@@ -44,17 +44,17 @@ jobs:
         run: |
           echo "RELEASE_CHANNEL=$(npm run release-channel --silent)" >> $GITHUB_ENV
 
-      - name: Publish `foundationicons`
+      - name: Publish `noicons`
         run: npm publish --tag ${{ env.RELEASE_CHANNEL }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish `@foundationicons/react`
+      - name: Publish `@noicons/react`
         run: npm publish ./react --tag ${{ env.RELEASE_CHANNEL }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish `@foundationicons/vue`
+      - name: Publish `@noicons/vue`
         run: npm publish ./vue --tag ${{ env.RELEASE_CHANNEL }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
