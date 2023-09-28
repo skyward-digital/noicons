@@ -1,5 +1,5 @@
 {
-  "name": "foundationicons",
+  "name": "noicons",
   "version": "0.0.1",
   "license": "MIT",
   "files": [
@@ -26,5 +26,11 @@
     "prettier": "^2.8.7",
     "rimraf": "^3.0.2",
     "svgo": "^1.3.2"
-  }
+  },
+  "keywords": [
+    "noicons",
+    "icon-starter",
+    "icon-library",
+    "svg-icons"
+  ]
 }

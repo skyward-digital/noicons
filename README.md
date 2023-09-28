@@ -1,14 +1,16 @@
 <!-- <p align="center">
-  <a href="https://skyward.digital/resources/foundationicons/#gh-light-mode-only" target="_blank">
-    <img src="./.github/logo-light.svg" alt="Foundationicons" width="300">
+  <a href="https://skyward.digital/resources/noicons/#gh-light-mode-only" target="_blank">
+    <img src="./.github/logo-light.svg" alt="noicons" width="300">
   </a>
-  <a href="https://skyward.digital/resources/foundationicons/#gh-dark-mode-only" target="_blank">
-    <img src="./.github/logo-dark.svg" alt="Foundationicons" width="300">
+  <a href="https://skyward.digital/resources/noicons/#gh-dark-mode-only" target="_blank">
+    <img src="./.github/logo-dark.svg" alt="noicons" width="300">
   </a>
 </p> -->
 
+<h1>Welcome to NoIcons!</h1>
+
 <p align="center">
-  An opinionated, blank icon library for you to use any of your custom SVG icons in first party <a href="#react">React</a> and <a href="#vue">Vue</a> libraries. No more inline SVGs!
+  An opinionated, completely blank icon library for you to use any of your custom SVG icons in first party <a href="#react">React</a> and <a href="#vue">Vue</a> libraries. No more inline SVGs!
 <p>
 
 <p align="center">
@@ -23,6 +25,7 @@
 
 1. Fork this repo
 1. Add your custom SVG icons to the `src` directory
+1. Rename this
 1. Add your NPM token to your github secrets
 1. Import the icons in your React or Vue project
 
@@ -52,7 +55,7 @@ Go from this:
 To this:
 
 ```js
-import { BeakerIcon } from '@youricons/react/solid'
+import { BeakerIcon } from '@noicons/react/solid'
 
 <BeakerIcon>
 ```
@@ -87,16 +90,16 @@ If you wish to add or remove icon styles, you'll need to update the `build` scri
 
 ## React
 
-First, install `@youricons/react` from npm:
+First, install `@noicons/react` from npm:
 
 ```sh
-npm install @youricons/react
+npm install @noicons/react
 ```
 
 Now each icon can be imported individually as a React component:
 
 ```js
-import { BeakerIcon } from '@youricons/react/solid'
+import { BeakerIcon } from '@noicons/react/solid'
 
 function MyComponent() {
   return (
@@ -114,10 +117,10 @@ Icons use an upper camel case naming convention and are always suffixed with the
 
 _Note that this library currently only supports Vue 3._
 
-First, install `@youricons/vue` from npm:
+First, install `@noicons/vue` from npm:
 
 ```sh
-npm install @youricons/vue
+npm install @noicons/vue
 ```
 
 Now each icon can be imported individually as a Vue component:
@@ -131,7 +134,7 @@ Now each icon can be imported individually as a Vue component:
 </template>
 
 <script setup>
-import { BeakerIcon } from '@youricons/vue/solid'
+import { BeakerIcon } from '@noicons/vue/solid'
 </script>
 ```
 

@@ -44,26 +44,26 @@ jobs:
         run: |
           echo "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
-      - name: 'Version `foundationicons` based on commit: 0.0.0-insiders.${{ env.SHA_SHORT }}'
+      - name: 'Version `noicons` based on commit: 0.0.0-insiders.${{ env.SHA_SHORT }}'
         run: npm version 0.0.0-insiders.${{ env.SHA_SHORT }} --force --no-git-tag-version
 
-      - name: 'Version `@foundationicons/react` based on commit: 0.0.0-insiders.${{ env.SHA_SHORT }}'
+      - name: 'Version `@noicons/react` based on commit: 0.0.0-insiders.${{ env.SHA_SHORT }}'
         run: npm version 0.0.0-insiders.${{ env.SHA_SHORT }} --force --no-git-tag-version --prefix react
 
-      - name: 'Version `@foundationicons/vue` based on commit: 0.0.0-insiders.${{ env.SHA_SHORT }}'
+      - name: 'Version `@noicons/vue` based on commit: 0.0.0-insiders.${{ env.SHA_SHORT }}'
         run: npm version 0.0.0-insiders.${{ env.SHA_SHORT }} --force --no-git-tag-version --prefix vue
 
-      - name: Publish `foundationicons`
+      - name: Publish `noicons`
         run: npm publish --tag insiders
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish `@foundationicons/react`
+      - name: Publish `@noicons/react`
         run: npm publish ./react --tag insiders
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish `@foundationicons/vue`
+      - name: Publish `@noicons/vue`
         run: npm publish ./vue --tag insiders
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
