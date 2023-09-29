@@ -44,12 +44,6 @@ jobs:
         run: |
           echo "RELEASE_CHANNEL=$(npm run release-channel --silent)" >> $GITHUB_ENV
 
-      - name: Check Version
-        run: npm run release-channel
-
-      - name: Check Publish
-        run: npm publish --tag latest --dry-run
-
       - name: Publish `noicons`
         run: npm publish --tag ${{ env.RELEASE_CHANNEL }}
         env:
