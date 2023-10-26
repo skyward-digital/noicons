@@ -11,6 +11,8 @@
 
 An opinionated, completely blank icon library for you to use any of your custom SVG icons in first party [React](#react) and [Vue](#vue) libraries. No more inline SVGs!
 
+Created by [Dan Sprating](https://danspratling.dev) and the team at [Skyward Digital](https://skyward.digital).
+
 [Add your icon library URL here (or delete this)](#)
 
 <a href="https://github.com/skyward-digital/noicons/releases"><img src="https://img.shields.io/npm/v/noicons" alt="Latest Release"></a>
